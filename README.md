@@ -25,9 +25,9 @@ Pushes to `develop` stop after the test stage. Nothing reaches production withou
 
 AWS EC2 · Ansible · Git / GitHub · Jenkins (1 master + 2 agents) · Docker · Docker Hub
 
-## Repository layout
+## Repository Layout
 
-\`\`\`
+```text
 ├── Dockerfile
 ├── Jenkinsfile
 ├── ansible/
@@ -37,7 +37,7 @@ AWS EC2 · Ansible · Git / GitHub · Jenkins (1 master + 2 agents) · Docker ·
 │   ├── architecture.svg
 │   └── screenshots/
 └── README.md
-\`\`\`
+```
 
 ## Screenshots
 
@@ -67,7 +67,7 @@ More in `docs/screenshots/` — Ansible provisioning, the Git workflow, and the 
 ## What actually went wrong
 
 My first two pipeline runs failed outright on the build stage — turned out
-to be a typo in the Docker Hub credentials. Fixed that and every run since
+to be a typo in the Docker Hub credentials. Fixed that, and every run since
 has gone clean. Also spent a while wondering why Job1 wouldn't start at
 all before realizing the Jenkins built-in node had 0 executors configured.
 
