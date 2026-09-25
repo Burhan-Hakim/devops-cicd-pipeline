@@ -2,7 +2,7 @@ pipeline {
     agent none
 
     environment {
-        IMAGE = "YOUR_DOCKERHUB_USER/abode-website"
+        IMAGE = "hakimburhan/abode-website"
         TAG   = "${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
     }
 
